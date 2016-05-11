@@ -13,6 +13,10 @@
 		E5901C581CE31EAF00BCDA19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5901C561CE31EAF00BCDA19 /* Main.storyboard */; };
 		E5901C5A1CE31EAF00BCDA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5901C591CE31EAF00BCDA19 /* Assets.xcassets */; };
 		E5901C5D1CE31EAF00BCDA19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5901C5B1CE31EAF00BCDA19 /* LaunchScreen.storyboard */; };
+		E5901C661CE31EBD00BCDA19 /* DHVector.m in Sources */ = {isa = PBXBuildFile; fileRef = E5901C651CE31EBD00BCDA19 /* DHVector.m */; };
+		E5901C6E1CE31EC600BCDA19 /* DHTSPMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E5901C681CE31EC600BCDA19 /* DHTSPMap.m */; };
+		E5901C6F1CE31EC600BCDA19 /* DHTSPGenome.m in Sources */ = {isa = PBXBuildFile; fileRef = E5901C6A1CE31EC600BCDA19 /* DHTSPGenome.m */; };
+		E5901C701CE31EC600BCDA19 /* DHTSPGa.m in Sources */ = {isa = PBXBuildFile; fileRef = E5901C6C1CE31EC600BCDA19 /* DHTSPGa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		E5901C591CE31EAF00BCDA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5901C5C1CE31EAF00BCDA19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5901C5E1CE31EAF00BCDA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5901C641CE31EBD00BCDA19 /* DHVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHVector.h; sourceTree = "<group>"; };
+		E5901C651CE31EBD00BCDA19 /* DHVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHVector.m; sourceTree = "<group>"; };
+		E5901C671CE31EC600BCDA19 /* DHTSPMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTSPMap.h; sourceTree = "<group>"; };
+		E5901C681CE31EC600BCDA19 /* DHTSPMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTSPMap.m; sourceTree = "<group>"; };
+		E5901C691CE31EC600BCDA19 /* DHTSPGenome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTSPGenome.h; sourceTree = "<group>"; };
+		E5901C6A1CE31EC600BCDA19 /* DHTSPGenome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTSPGenome.m; sourceTree = "<group>"; };
+		E5901C6B1CE31EC600BCDA19 /* DHTSPGa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTSPGa.h; sourceTree = "<group>"; };
+		E5901C6C1CE31EC600BCDA19 /* DHTSPGa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTSPGa.m; sourceTree = "<group>"; };
+		E5901C6D1CE31EC600BCDA19 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +71,19 @@
 		E5901C4C1CE31EAF00BCDA19 /* TravelingSalesmanProblem */ = {
 			isa = PBXGroup;
 			children = (
+				E5901C641CE31EBD00BCDA19 /* DHVector.h */,
+				E5901C651CE31EBD00BCDA19 /* DHVector.m */,
 				E5901C501CE31EAF00BCDA19 /* AppDelegate.h */,
 				E5901C511CE31EAF00BCDA19 /* AppDelegate.m */,
 				E5901C531CE31EAF00BCDA19 /* ViewController.h */,
 				E5901C541CE31EAF00BCDA19 /* ViewController.m */,
+				E5901C671CE31EC600BCDA19 /* DHTSPMap.h */,
+				E5901C681CE31EC600BCDA19 /* DHTSPMap.m */,
+				E5901C691CE31EC600BCDA19 /* DHTSPGenome.h */,
+				E5901C6A1CE31EC600BCDA19 /* DHTSPGenome.m */,
+				E5901C6B1CE31EC600BCDA19 /* DHTSPGa.h */,
+				E5901C6C1CE31EC600BCDA19 /* DHTSPGa.m */,
+				E5901C6D1CE31EC600BCDA19 /* defines.h */,
 				E5901C561CE31EAF00BCDA19 /* Main.storyboard */,
 				E5901C591CE31EAF00BCDA19 /* Assets.xcassets */,
 				E5901C5B1CE31EAF00BCDA19 /* LaunchScreen.storyboard */,
@@ -150,7 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5901C661CE31EBD00BCDA19 /* DHVector.m in Sources */,
 				E5901C551CE31EAF00BCDA19 /* ViewController.m in Sources */,
+				E5901C6F1CE31EC600BCDA19 /* DHTSPGenome.m in Sources */,
+				E5901C701CE31EC600BCDA19 /* DHTSPGa.m in Sources */,
+				E5901C6E1CE31EC600BCDA19 /* DHTSPMap.m in Sources */,
 				E5901C521CE31EAF00BCDA19 /* AppDelegate.m in Sources */,
 				E5901C4F1CE31EAF00BCDA19 /* main.m in Sources */,
 			);
